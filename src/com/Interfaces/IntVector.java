@@ -6,7 +6,7 @@ public class IntVector implements IntList {
     private int[] array;
     private int size;
 
-//    CONSTRUCTOR P
+//    CONSTRUCTOR
     public IntVector(){
         array = new int[20];
         size = 0;
@@ -14,7 +14,7 @@ public class IntVector implements IntList {
 
 // PROPIOS
 public void llenar(){
-    for (int i = 0; i < 20; i++) {
+    for (int i = 6; i < 25; i++) {
         add(i);
 //        System.out.println("Este es el array resultante: " + array[i]);
 
@@ -31,13 +31,15 @@ public void llenar(){
         array[size++] = num;
 
     }
-//    @Override
-//    public int get(int id) {
-//        if(id < 0 || id >=size)
-//
-//
-//        return id;
-//    }
+    @Override
+    public int get(int id) {
+        int j;
+        for (j = 0 ; j < size; j++)
+            if(j == id){
+                return array[j];
+            }
+        return array[j];
+    }
 
 
 //    VISUALIZACIÓN

@@ -17,12 +17,13 @@ public class IntArrayList implements IntList{
 //    llenar rápido por vaga
 
     public void llenar(){
-        for (int i = 0; i < 9; i++) {
+        for (int i = 1; i < 10; i++) {
            add(i);
 //           System.out.println("Este es el array resultante: " + array[i]);
 
         }
     }
+
 
     //DE LA INTERFAZ
     @Override
@@ -35,11 +36,15 @@ public class IntArrayList implements IntList{
 
     }
 
-//    @Override
-//    public int get(int id) {
-//
-//        return id;
-//    }
+    @Override
+    public int get(int id) {
+        int j;
+        for (j = 0 ; j < size; j++)
+            if(j == id){
+        return array[j];
+    }
+        return array[j];
+    }
 
 //    VISUALIZACIÓN PORQUE ESTO SIGUE SIENDO UNA CLASE
     @Override
