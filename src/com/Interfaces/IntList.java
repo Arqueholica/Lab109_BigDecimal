@@ -1,6 +1,6 @@
 package com.Interfaces;
 
 public interface IntList {
-    void add();
-    void get();
+    void add(int num);
+//    int get(int id);
 }
